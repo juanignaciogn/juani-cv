@@ -9,7 +9,7 @@ import https from 'https';
 import os from 'os';
 import middlewares from './middlewares';
 import { SECURE, PRODUCTION } from './env';
-import config from './config';
+import config from '../../config';
 import appRouter from './router';
 
 const numCPUs = os.cpus().length;
