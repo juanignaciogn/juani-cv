@@ -4,7 +4,8 @@
   "description": "React web app with my curriculum",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=production node ./index.js",
+    "start-dev": "NODE_ENV=development NODE_HTTPS=true nodemon ./index.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,8 @@
     "@babel/core": "7.7.4",
     "@babel/preset-env": "7.7.4",
     "@babel/preset-react": "7.7.4",
-    "babel-eslint": "10.0.3"
+    "babel-eslint": "10.0.3",
+    "nodemon": "2.0.1"
   },
   "dependencies": {
     "express": "4.17.1",
