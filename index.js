@@ -1,6 +1,7 @@
-/**
- * Babel register
- */
 require('@babel/register')({
-    ignore: ['node_modules']
-  });
+  ignore: ['node_modules']
+});
+
+const Server = require('./app/server').default;
+
+new Server();

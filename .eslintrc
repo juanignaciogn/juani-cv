@@ -1,5 +1,5 @@
 {
-  "extends": "bragi",
+  "extends": "airbnb",
   "root": true,
   "parser": "babel-eslint",
   "env": {
