@@ -1,9 +1,8 @@
 import { Router} from 'express';
+import index from '../pages/index';
 
 const router = Router({ mergeParams: true });
 
-router.get('/', (req, res) => {
-    res.send(200, 'ok');
-})
+router.get('/', index);
 
 export default router;

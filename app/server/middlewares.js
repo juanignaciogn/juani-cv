@@ -3,6 +3,7 @@ import helmet from 'helmet';
 import bodyParser from 'body-parser';
 import hpp from 'hpp';
 import cookieParser from 'cookie-parser';
+import renderMiddleware from '../middlewares/render';
 
 export default [
   compression(),
@@ -23,5 +24,6 @@ export default [
     limit: '100kb'
   }),
   cookieParser(),
-  hpp()
+  hpp(),
+  renderMiddleware()
 ];

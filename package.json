@@ -6,6 +6,9 @@
   "scripts": {
     "start": "NODE_ENV=production node ./index.js",
     "start-dev": "NODE_ENV=development NODE_HTTPS=true nodemon ./index.js",
+    "build": "NODE_ENV=development webpack --config webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --config webpack.config.js",
+    "dist": "NODE_ENV=production webpack --config webpack.config.js",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:js": "eslint --ext .js --ext .jsx .",
     "lint:css": "sass-lint 'app/**/*.scss' -v -q"
@@ -37,13 +40,14 @@
     "@babel/preset-react": "7.7.4",
     "@babel/register": "7.7.4",
     "body-parser": "1.19.0",
-    "cluster": "^0.7.7",
+    "cluster": "0.7.7",
     "compression": "1.7.4",
     "cookie-parser": "1.4.4",
     "express": "4.17.1",
     "helmet": "3.21.2",
     "hpp": "0.2.2",
     "react": "16.12.0",
-    "react-dom": "16.12.0"
+    "react-dom": "16.12.0",
+    "react-side-effect": "2.1.0"
   }
 }

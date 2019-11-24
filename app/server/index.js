@@ -81,8 +81,8 @@ class Server {
     if (SECURE) {
       port = this.config.server.securePort;
       const options = {
-        key: fs.readFileSync(`${__dirname}/config/ssl/key.pem`),
-        cert: fs.readFileSync(`${__dirname}/config/ssl/cert.pem`)
+        key: fs.readFileSync(`${__dirname}/../../config/ssl/key.pem`),
+        cert: fs.readFileSync(`${__dirname}/../../config/ssl/cert.pem`)
       };
       this.server = https.createServer(options, this.app);
 
