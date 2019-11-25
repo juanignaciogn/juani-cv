@@ -24,8 +24,6 @@ const renderMiddleware = (opt = {}) => (req, res, next) => {
         const headSync = bundles[0];
         const styles = bundles[1];
         const scripts = bundles[2];
-        console.log(app);
-        console.log(styles);
         const output = `
                 <!DOCTYPE html>
                 <html lang="es-AR">
