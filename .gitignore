@@ -1,6 +1,9 @@
 # Dependency directory
 node_modules
 
+# Dynamically processed files
+build
+
 # Trash
 .DS_Store
 .idea

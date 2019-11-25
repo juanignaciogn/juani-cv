@@ -4,4 +4,4 @@ require('@babel/register')({
 
 const Server = require('./app/server').default;
 
-new Server();
+module.exports = new Server();
